@@ -6,6 +6,8 @@ public class BallControl : MonoBehaviour
 {
     private bool isHooped;
     private int score;
+
+    public GameSystem gameManager;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "HoopTrigger")
@@ -14,6 +16,7 @@ public class BallControl : MonoBehaviour
         }
         if (collision.gameObject.tag == "ScoreTrigger")
         {
+            gameManager.ChangeHoopPosition();
             score += 1;
         }
     }
