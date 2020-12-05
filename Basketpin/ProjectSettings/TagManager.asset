@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Dead
   - Gold
   - HoopTrigger
   - ScoreTrigger
   - BounceWall
+  - DeadTrigger
   layers:
   - Default
   - TransparentFX
