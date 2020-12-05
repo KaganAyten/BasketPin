@@ -8,6 +8,7 @@ TagManager:
   - Gold
   - HoopTrigger
   - ScoreTrigger
+  - BounceWall
   layers:
   - Default
   - TransparentFX

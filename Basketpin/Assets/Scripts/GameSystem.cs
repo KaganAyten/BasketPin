@@ -21,7 +21,7 @@ public class GameSystem : MonoBehaviour
 
     [SerializeField]
     [Range(-50, 50)]
-    private float axeX;
+    private float minX,maxX;
 
     private Rigidbody2D rbRight;
     private Rigidbody2D rbLeft;
@@ -62,18 +62,7 @@ public class GameSystem : MonoBehaviour
     }
     public void ChangeHoopPosition()
     {
-        int left_or_right = Random.Range(1, 3);
-        switch(left_or_right){
-            case 1:
-                hoop.transform.position = new Vector3(axeX,Random.Range(minY, maxY),0);
-                hoop.transform.eulerAngles = new Vector3(0,0, 0);
-                break;
-            case 2:
-                hoop.transform.position = new Vector3(-axeX,Random.Range(minY, maxY), 0);
-                hoop.transform.eulerAngles = new Vector3(0, 180, 0);
-                break;
-        }
-        
+        hoop.transform.position = new Vector3(Random.Range(minX, maxX), Random.Range(minY, maxY),0);
     }
     void Throw(Rigidbody2D rb,float force)
     {
