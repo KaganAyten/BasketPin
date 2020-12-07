@@ -7,6 +7,7 @@ public class BallControl : MonoBehaviour
     private bool isHooped;
     private int score;
     private bool isDead;
+    private int deathCount;
 
     private Rigidbody2D rb;
     Vector3 lastVelocity;
@@ -16,8 +17,9 @@ public class BallControl : MonoBehaviour
     {
         isDead = false;
         rb = gameObject.GetComponent<Rigidbody2D>();
+        deathCount = 0;
     }
-    private void Update()
+    private void FixedUpdate()
     {
         lastVelocity = rb.velocity;
     }
@@ -30,6 +32,7 @@ public class BallControl : MonoBehaviour
         if (collision.gameObject.tag == "DeadTrigger")
         {
             isDead = true;
+            deathCount += 1;
             gameManager.SFXGameOver();
         }
         if (collision.gameObject.tag == "ScoreTrigger")
@@ -55,6 +58,14 @@ public class BallControl : MonoBehaviour
             rb.velocity = direction * Mathf.Max(speed/1.5f, 0);
         }
         
+    }
+    public int GetDeathCount()
+    {
+        return this.deathCount;
+    }
+    public void SetDeathCount(int deathCount)
+    {
+        this.deathCount = deathCount;
     }
     public bool GetIsDead()
     {

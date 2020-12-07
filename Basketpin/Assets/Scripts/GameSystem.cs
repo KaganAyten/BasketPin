@@ -42,7 +42,6 @@ public class GameSystem : MonoBehaviour
     int isMutedSFX;
     int bestScore;
 
-    int retryCounter;
 
     [Header("Game Settings")]
     [SerializeField]
@@ -68,6 +67,7 @@ public class GameSystem : MonoBehaviour
     private Vector3 spawnPos;
     void Start()
     {
+        ScreenCapture.CaptureScreenshot("SomeLevel");
         rbRight = rightArm.GetComponent<Rigidbody2D>();
         rbLeft = leftArm.GetComponent<Rigidbody2D>();
         rbRightReflect = rightArmReflect.GetComponent<Rigidbody2D>();
@@ -84,16 +84,11 @@ public class GameSystem : MonoBehaviour
         bestScore= PlayerPrefs.GetInt("Best", 0);
         isMutedAudio = PlayerPrefs.GetInt("Audio", 0);
         isMutedSFX= PlayerPrefs.GetInt("SFX", 0);
-        retryCounter = 0;
     }
 
     void Update()
     {
-        if (retryCounter >= 5)
-        {
-            //show ad
-            retryCounter = 0;
-        }
+        
         if (isMutedAudio == 1)
         {
             musicControl.volume = 0;
@@ -178,7 +173,7 @@ public class GameSystem : MonoBehaviour
     }
     public void RateUs()
     {
-        Application.OpenURL("market://details?id=com.PixelPearl.Reflecks");
+        Application.OpenURL("market://details?id=com.PixelPearl.BasketPin");
     }
     public void SFXGameOver()
     {
@@ -224,7 +219,6 @@ public class GameSystem : MonoBehaviour
     }
     public void RestartGame()
     {
-        retryCounter++;
         scoreText.enabled = true;
         StaticButtons.SetActive(false);
         ball.SetActive(true);
