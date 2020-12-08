@@ -2,18 +2,25 @@
 <div>
   <img width="200" height="125" align="center" src="https://github.com/KaganAyten/BasketPin/blob/main/Basketpin/Assets/UIElements/basketpin.png">
   <p>BasketPin is a pinball inspirited basketball game.</p>
+  <p>If you download my game from Google Play before cloning project I will be pleased.</p>
   <p>You are allowed to modify/use/sell this game in anyway that you want, i just ask you to credit me.<p>
+  <a href="https://play.google.com/store/apps/details?id=com.PixelPearl.BasketPin">Google Play Link</a>
 </div>
 
 
 ## About The Game
+<ul>
+  <li>I drew the sprites which in the game so it's free to use. </li>
+  <li>Admob implemented.</li>
+  <li>Easy to read and change code</li>
+  <li>Android ready</li>
+</ul>
 
-I didn't really know what i was doing back in the day when i was hired to do this game, so as you can see, some images are streched and i
-didn't know how to use photoshop properly (as you can see in the screenshots below), and the code...the code was a mess, it was all 
-over the place.
 
 ## Screenshots
 
 <div>
-  <img width="251" height="447" align="left" src="https://github.com/NicolasPCouts/FlappyBird-Unity2017/blob/master/screenshots/Screenshot_20180710-001753.png">
+  <img width="251" height="447" align="left" src="https://lh3.googleusercontent.com/ufYxZJQbEjORJ0An92cj1joEYXRNQLgt5vJcSXDPQ2mVhj_5P4MGWv8RKUI727hNcTM">
+  <img width="251" height="447" align="left" src="https://lh3.googleusercontent.com/f1nnY8bZwg3cAhUaob4IEQv4scVesmD2gvwoIkuArEubAcC5lxKji-KEUWVliEtirvhi">
+  <img width="251" height="447" align="https://lh3.googleusercontent.com/JlOrXZDjm9Jo50TBU5zPVPAjlxieufobQPzlEU5WJ7sKoT0-BizY5SlyIi2ZrROffEs">
 </div>
