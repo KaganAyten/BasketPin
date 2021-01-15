@@ -1,6 +1,6 @@
 # BasketPin - Unity Mobile Game
 <div>
-  <img width="100" height="100" align="center" src="https://github.com/KaganAyten/BasketPin/blob/main/Basketpin/Assets/UIElements/Logo.jpg" align="center">
+  <img align="center" width="100" height="100" align="center" src="https://github.com/KaganAyten/BasketPin/blob/main/Basketpin/Assets/UIElements/Logo.jpg">
   <p align="center">BasketPin is a pinball inspirited basketball game.</p>
   <p align="center">If you download my game from Google Play before cloning project I will be pleased.</p>
   <p align="center">You are allowed to modify/use/sell this game in anyway that you want, i just ask you to credit me.<p>
